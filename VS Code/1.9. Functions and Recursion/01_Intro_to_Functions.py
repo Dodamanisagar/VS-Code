@@ -19,6 +19,38 @@ def greet(name):
 # Calling a function
 greet("Alice")
 
+""" 
+In Python, methods and functions are similar but have some key differences:
+
+Functions
+- Definition: A function is a block of reusable code that performs a specific task. It is defined using the def keyword.
+- Usage: Functions can be called independently and are not tied to any object.
+- Example:
+  def greet(name):
+      return f"Hello, {name}!"
+
+  print(greet("Alice"))
+
+Methods
+- Definition: A method is a function that is associated with an object. Methods are defined within a class and operate on instances of that class.
+- Usage: Methods are called on objects and can access and modify the object's attributes.
+- Example:
+  class Person:
+      def __init__(self, name):
+          self.name = name
+
+      def greet(self):
+          return f"Hello, {self.name}!"
+
+  person = Person("Alice")
+  print(person.greet())
+
+Key Differences
+- Association: Functions are standalone, while methods are associated with class instances.
+- Calling: Functions are called by their name, whereas methods are called on objects using the dot notation (e.g., object.method()).
+- Access: Methods can access and modify the attributes of the object they belong to, while functions cannot.
+"""
+
 # Function with return statement
 def add(a, b):
     """This function returns the sum of two numbers"""
